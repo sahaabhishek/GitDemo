@@ -52,3 +52,4 @@ assert int(total) > float(discountAmt)
 m=driver.find_element(By.CLASS_NAME,"promoInfo").text
 assert 'applied' in m
 driver.find_element(By.XPATH,"//button[normalize-space()='Place Order']").click()
+driver.find_element(By.CLASS_NAME,"chkAgree").click()
